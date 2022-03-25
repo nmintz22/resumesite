@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content-area {
+            background-color: #ffba08;
+        }
+        .container {
+            background-color: white;
+        }
+        #header-div {
+            background-color: #faa307;
+            width:100%;
+            height: 6em;
+            border-bottom: 2px dashed black;
+            margin-bottom: 3em;
+        }
+        #main-header {
+            text-align: center;
+        }
+        .nav-element {
+            display: inline;
+            margin-left: 10em;
+            margin-bottom: 10px;
+        }
+        a {
+            text-align: center;
+        }
+        .row {
+            height: 10em;
+            margin-bottom: 3em;
+        }
+        .score-bubble {
+            float: left;
+            border: 3px dotted black;
+            height: 100%;
+            width: 10em;
+            background-color: yellow;
+        }
+        .score-hdr {
+            text-align: center;
+            margin-top: .6em;
+            font-size: 60px;
+            user-select: none;
+        }
+        .dec {
+            font-size: 35px;
+            user-select: none;
+        }
+        .info {
+            display: block;
+            height:50%;
+            width:100%;
+        }
+        .score-div {
+            width: 10em;
+        }
+        .date-hdr {
+            margin-top: 5px;
+        }
+        .loc-hdr {
+            margin-top: 1em;
+            font-size: 20px;
+        }
+        .name {
+            text-align: center;
+            font-size: 50px;
+            margin-top:.15em;
+        }
+        .row:hover {
+            background-color: rgba(228, 222, 222, 0.75);
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="/onebiteicon.jpeg">
+    <title>Pizza Reviews</title>
+</head>
+<body>
+    <div class="content-area">
+        <div id="header-div">
+            <h1 id="main-header">Pizza Reviews</h1>
+            <h3 class="nav-element"><a href="/resumesite.html">Resume</a></h3>
+            <h3 class="nav-element"><a href="https://werdl.herokuapp.com">Werdl</a></h3>
+            <h3 class="nav-element">Coming Soon</h3>
+        </div>
+        <div class="container">
+            <div class="row" style="height:50px;background-color:rgb(236, 233, 16);">
+                <div class="col" style="width:50%;"><h1 style="text-align: center;">Average Rating: 6.7</h1></div>
+                <div class="col" style="width:50%;"><h1 style="text-align: center;">Total Reviews: 23</h1></div>
+            </div>
+            <div class="row alt">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">7<span class="dec">.7</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">11/19/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Roseland, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Rezza</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">8<span class="dec">.1</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">10/5/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Montvale, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Franco's Pizza</h1>
+                </div>
+            </div>
+            <div class="row" id="marker">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">6<span class="dec">.8</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">9/28/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Hillsdale, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Hold My Knots</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">8<span class="dec">.2</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">9/17/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Hillsdale, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Nino's Pizza</h1>
+                </div>
+            </div>
+            <div class="row alt">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">8<span class="dec">.2</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">9/13/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Park Ridge, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Marc's Pizza</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">7<span class="dec">.4</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">9/2/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Montvale, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Phils's Pizza</h1>
+                </div>
+            </div>
+            <div class="row alt">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">6<span class="dec">.4</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">8/6/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Brick, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">River Rock</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">7<span class="dec">.7</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">8/5/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Asbury Park, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Porta</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">7<span class="dec">.6</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">8/1/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Brick, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Frederico's Pizza</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">6<span class="dec">.9</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/4/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Point Pleasant, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Maria's Pizza</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">7<span class="dec">.2</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/23/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Toms River, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Pizza & Panini</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">7<span class="dec">.8</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/20/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Point Pleasant, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Pat's Pizza</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">7<span class="dec">.6</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/13/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Park Ridge, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Ridgemont Pizza</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">8<span class="dec">.2</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/9/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Point Pleasant, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Rosie's Pizza</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">6<span class="dec">.9</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/7/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Seaside Heights, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Maruca's Tomato Pies</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">6<span class="dec">.4</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/6/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Point Pleasant, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Luigi's Pizza</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">6<span class="dec">.6</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/5/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Bay Head, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">DiMatteo's Pizza</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">6<span class="dec">.4</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/5/21</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Point Pleasant, NJ</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Joey Tomato's</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">6<span class="dec">.6</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">8/30/19</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Southampton, NY</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Pellegrino's Pizza</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">5<span class="dec">.0</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/24/19</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Lake Tahoe, CA</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Round Table Pizza</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">7<span class="dec">.0</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/16/19</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Las Vegas, NV</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">New York Pizzeria</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">3<span class="dec">.5</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/4/19</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Torrington, WY</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Pizza Hut</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" class="score-div">
+                    <div class="rounded-circle score-bubble">
+                        <h1 class="score-hdr">0<span class="dec">.5</span></h1>
+                    </div>
+                </div>
+                <div class="col-2" class="info-div">
+                    <div class="info">
+                        <h2 class="date-hdr">7/3/19</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="loc-hdr">Centennial, CO</h2></div>
+                    </div>
+                <div class="col-8">
+                    <h1 class="name">Golden Corral Buffet</h1>
+                </div>
+            </div>
+        </div>
+        <button class="btn" id="scroll-btn" style="position:sticky;bottom:0px;left:10px;border:1px solid black;background-color:white;">Back to Top</button>                  
+        <!-- <button class="btn" id="rand-btn" style="position:sticky;bottom:90%;left:10px;border:1px solid black;background-color:white;">Random Review</button>                   -->
+        <div style="width:100%;">
+            <h4 style="text-align: center;">Reviews from Barstool's <span style="font-style: italic;">One Bite</span></h4>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $("#scroll-btn").click(function() {
+           document.getElementById("header-div").scrollIntoView();
+        });
+        // $("#rand-btn").click(function() {
+        //    var rand = Math.floor(Math.random() * $(".container .row").length-1) + 1;
+        //    console.log($($($(".container").children()[rand])[0]))
+        // });
+
+        $(".row").mouseenter(function() {
+            $($($(this).children()[2]).children()[0]).css("font-size","60px");
+        });
+        $(".row").mouseleave(function() {
+            $($($(this).children()[2]).children()[0]).css("font-size","50px");
+        });
+    });
+</script>
+</html>
