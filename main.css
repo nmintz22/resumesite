@@ -1,0 +1,60 @@
+:root {
+    --bg-color: rgb(241, 236, 236);
+}
+
+table, tr, td {
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    table-layout: fixed;
+}
+
+td {
+    width: 75px;
+    height: 75px;
+    border: 5px solid black;
+    background-color: white;
+    font-size: 35px;
+}
+
+body {
+    background: var(--bg-color);
+    /* background: rgb(95, 233, 113); */
+}
+
+#game-header {
+    font-weight: bold;
+    margin-bottom: .5em;
+    border-bottom: 1px solid black;
+}
+
+#game-area {
+    justify-content: center;
+}
+
+#name-header {
+    justify-content: center;
+}
+
+#win-msg {
+    text-align: center;
+    margin-top: .5em;
+    font-weight: bold;
+    display:none;
+}
+
+.ind {
+    border: none;
+    background-color: var(--bg-color);
+}
+
+.ind-h {
+    color: rgb(6, 59, 34);
+}
+
+#word-header {
+    display: block;
+    height: 2em;
+}

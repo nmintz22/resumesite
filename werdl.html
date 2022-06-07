@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="/static/bootstrap.css">
+    <link href="/static/main.css" type="text/css" rel="stylesheet">
+    <!--<script src="https://www.pythonanywhere.com/user/nmintz22/files/home/nmintz22/wordleunlimited/static/bootstrap.js" type="text/javascript"></script>-->
+    <link rel="icon" type="image/x-icon" href="/static/wordleU.png">
+    <title>Werdl</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="game-header">
+            <div class="col">
+                <div class="row" id="name-header">
+                    <h1>Werdl</h1>
+                </div>
+                <div class="row">
+                    <div class="col-3"><h6>Press [SPACE] to restart</h6></div>
+                    <div class="col-6" style="text-align:center"><h6>Streak: <span id="score-span"></span></h6></div>
+                    <div class="col-3"><h6 style="font-size: .9em;">Not affiliated with NY Times' Wordle</h6></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row" id="word-header" style="text-align: center;"><h3><span style="display:none;" id="word-span"></span></h3></div>
+        <div class="row">
+            <div class="col d-flex" id="game-area">
+                <table>
+                    <tr id="r-0">
+                        <td class="ind" id="b-l1"><h1 id="i-0" class="ind-h"></h1></td>
+                        <td id="b-0"></td>
+                        <td id="b-1"></td>
+                        <td id="b-2"></td>
+                        <td id="b-3"></td>
+                        <td id="b-4"></td>
+                        <td class="ind" id="b-r1"><h1 id="ir-0" class="ind-h"></h1></td>
+                    </tr>
+                    <tr id="r-1">
+                        <td class="ind" id="b-l2"><h1 id="i-1" class="ind-h"></h1></td>
+                        <td id="b-5"></td>
+                        <td id="b-6"></td>
+                        <td id="b-7"></td>
+                        <td id="b-8"></td>
+                        <td id="b-9"></td>
+                        <td class="ind" id="b-r1"><h1 id="ir-1" class="ind-h"></h1></td>
+                    </tr>
+                    <tr id="r-2">
+                        <td class="ind" id="b-l3"><h1 id="i-2" class="ind-h"></h1></td>
+                        <td id="b-10"></td>
+                        <td id="b-11"></td>
+                        <td id="b-12"></td>
+                        <td id="b-13"></td>
+                        <td id="b-14"></td>
+                        <td class="ind" id="b-r1"><h1 id="ir-2" class="ind-h"></h1></td>
+                    </tr>
+                    <tr id="r-3">
+                        <td class="ind" id="b-l4"><h1 id="i-3" class="ind-h"></h1></td>
+                        <td id="b-15"></td>
+                        <td id="b-16"></td>
+                        <td id="b-17"></td>
+                        <td id="b-18"></td>
+                        <td id="b-19"></td>
+                        <td class="ind" id="b-r1"><h1 id="ir-3" class="ind-h"></h1></td>
+                    </tr>
+                    <tr id="r-4">
+                        <td class="ind" id="b-l5"><h1 id="i-4" class="ind-h"></h1></td>
+                        <td id="b-20"></td>
+                        <td id="b-21"></td>
+                        <td id="b-22"></td>
+                        <td id="b-23"></td>
+                        <td id="b-24"></td>
+                        <td class="ind" id="b-r1"><h1 id="ir-4" class="ind-h"></h1></td>
+                    </tr>
+                    <tr id="r-5">
+                        <td class="ind" id="b-l6"><h1 id="i-5" class="ind-h"></h1></td>
+                        <td id="b-25"></td>
+                        <td id="b-26"></td>
+                        <td id="b-27"></td>
+                        <td id="b-28"></td>
+                        <td id="b-29"></td>
+                        <td class="ind" id="b-r1"><h1 id="ir-5" class="ind-h"></h1></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row" id="win-msg"><h3 id="w-h"></h3></div>
+    </div>
+    <div style="position: fixed; bottom: 0px; left: 10px;margin-bottom:0px;"><p>Created by <a id="res-link" href="https://nmintz22.github.io/resumesite/">Nate Mintz</a></p></div>
+    <div style="position: fixed; bottom: 0px; right: 10px; margin-bottom:0px;"><p>Contact: natemintz7@gmail.com</p></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/static/script.js"></script>
+</html>
