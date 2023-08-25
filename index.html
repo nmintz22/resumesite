@@ -2,120 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        :root {
-            --card-offset: 40px;
-        }
-        #top-div {
-            background-color: rgb(42, 238, 107);
-        }
-        #main-header {
-            text-align: center;
-            color:black;
-        }
-        #edu {
-            display: inline-block;
-            position:relative;
-            top:0px;
-            width:33%;
-            height:500px;
-            border:1px solid black;
-            background-color: wheat;
-        }
-        #exp {
-            display:inline-block;
-            position:relative;
-            top:0px;
-            width:33%;
-            height: 500px;
-            border: 1px solid red;
-            background-color: rgb(130, 197, 121);
-        }
-        #hob {
-            display: inline-block;
-            position:relative;
-            top:0px;
-            width:33%;
-            height: 500px;
-            border: 1px solid blue;
-            background-color: rgb(97, 113, 148);
-        }
-        .info-header {
-            text-align: center;
-        }
-        ul {
-            text-align: center;
-            list-style: none;
-        }
-        li {
-            margin-bottom: 2em;
-        }
-        li:hover {
-            background-color: rgb(180, 176, 176);
-        }
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <title>Nate Mintz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>UFC Blind Rank</title>
 </head>
 <body>
-    <div id="top-div" style="width:100%;border:1px solid black;">
-        <h1 id="main-header">Nate's Resume Site</h1>
-        <h3 style="margin-left:4em;margin-top:0em;display:inline;">Contact at nmintz22@pascack.org</h3>
-        <h3 style="margin-left:4em;margin-top:0em;display:inline;"><a href="/resumesite/werdl.html">Werdl</a></h3>
-        <h3 style="margin-left:4em;margin-top:0em;display:inline;"><a href="/resumesite/simongame.html">Simon Game</a></h3>
-        <h3 style="margin-left:4em;margin-top:0em;display:inline;"><a href="/resumesite/preview.html">Pizza Reviews</a></h3>
-    </div>
-    <div class="container" style="margin-top:5em;">
-        <div id="content-area">
-            <div id="edu">
-                <h1 class="info-header">Education</h1>
-                <ul>
-                    <li>Graduated Woodcliff Middle School Class of 2018</li>
-                    <li>Graduating Pascack Hills High School Class of 2022</li>
-                    <li>Northeastern University Class of 2026</li>
-                </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="flex-center">
+                    <img class="belt" src="oldbelt.png" alt="">
+                </div>
             </div>
-            <div id="exp">
-                <h1 class="info-header">Experience</h1>
-                <ul>
-                    <li>Leader of Robotics team subdivision</li>
-                    <li>Demarest Farms employee</li>
-                    <li>Beach of Mantoloking employee</li>
-                </ul>
+            <div class="col-6">
+                <div class="flex-vert">
+                    <h1 id="title-hdr">UFC Blind Ranking</h1>
+                </div>
             </div>
-            <div id="hob">
-                <h1 class="info-header">Hobbies</h1>
-                <ul>
-                    <li>Snowboarding</li>
-                    <li>Golf</li>
-                    <li>Basketball</li>
-                </ul>
-    </div>
+            <div class="col-3">
+                <div class="flex-center">
+                    <img class="belt" src="oldbelt.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="game-area">
+                    <div id="number-col" class="vert-box">
+                        <h1 class="number" id="r1">1</h1>
+                        <div class="number" id="r2"><h1>2</h1></div>
+                        <h1 class="number" id="r3">3</h1>
+                        <h1 class="number" id="r4">4</h1>
+                        <h1 class="number" id="r5">5</h1>
+                    </div>
+                    <div id="rank-col" class="vert-box">
+                        <div id="b1" class="rank-box"></div>
+                        <div id="b2" class="rank-box"></div>
+                        <div id="b3" class="rank-box"></div>
+                        <div id="b4" class="rank-box"></div>
+                        <div id="b5" class="rank-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="bank">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function() {
-        $("#edu").mouseenter(function() {
-            $("#edu").css("top","0px").css("border","3px dashed black");
-            $("#exp").css("top","var(--card-offset)").css("border","none");
-            $("#hob").css("top","var(--card-offset)").css("border","none");
-        });
-        $("#exp").mouseenter(function() {
-            $("#edu").css("top","var(--card-offset)").css("border","none");
-            $("#exp").css("top","0px").css("border","3px dashed red");
-            $("#hob").css("top","var(--card-offset)").css("border","none");
-        });
-        $("#hob").mouseenter(function() {
-            $("#edu").css("top","var(--card-offset)").css("border","none");
-            $("#exp").css("top","var(--card-offset)").css("border","none");
-            $("#hob").css("top","0px").css("border","3px dashed green");
-        });
-
-        $("#edu").mouseenter();
-    });
-</script>
+<script src="scripts.js"></script>
 </html>
